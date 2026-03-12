@@ -14,7 +14,7 @@ import {
   Info
 } from 'lucide-react';
 import { UserProfile, WorkoutPlan, EnergyLevel } from './types';
-import { generateWorkout } from './services/geminiService';
+import { generateWorkout } from './geminiService';
 import Markdown from 'react-markdown';
 
 export default function App() {
