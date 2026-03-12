@@ -1,7 +1,7 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { UserProfile, WorkoutPlan } from "./types";
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || "" });
+const ai = new GoogleGenAI({ apiKey: process.env.VITE_GEMINI_API_KEY || "" });
 
 export async function generateWorkout(profile: UserProfile): Promise<WorkoutPlan> {
   const prompt = `Generate a personalized full-body no-equipment workout plan for a user with the following profile:
